@@ -1,0 +1,24 @@
+*{
+    font-family: "Cormorant Garamond", serif;
+    box-sizing: border-box;
+    background-color: #fff6fa;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 0 80px;
+}
+
+h1 {
+    width: 45%;
+    text-align: left;
+    color: #7E4A4A;
+    font-size: 100px;
+}
+
+header img {
+    width: 400px;
+}
