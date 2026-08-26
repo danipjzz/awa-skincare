@@ -107,6 +107,10 @@ nav a:hover{
     padding-left: 0; 
 }
 
+.columna ul li::marker {
+  color: #e87a8f; 
+}
+
 .productos{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -139,7 +143,9 @@ nav a:hover{
     transition: transform 0.6s;
     transform-style: preserve-3d;
 }
-
+.info h3{
+    font-family: "Cormorant Garamond", serif;
+}
 .tarjeta .info {
     position: absolute;
     top: 0;
@@ -148,15 +154,49 @@ nav a:hover{
     height: 500px;
     border: 1px solid #f8cccc;
     border-radius: 20px;
-    background: #ffbeca; /* tono acorde a tu paleta */
-    color: white;
+    background: #fff6fa; /* tono acorde a tu paleta */
+    color: #7E4A4A;
     padding: 20px;
     overflow: hidden;
     backface-visibility: hidden;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     transform: rotateY(180deg);
-    text-align: center;
+    text-align: left;
+}
+
+.separator-horizontal {
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid #f3c2c9; /* Color rosado suave de la línea */
+  margin: 20px 0;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff6fa; 
+  padding: 0 8px;
+  color: #e87a8f; 
+  font-size: 12px;
+}
+.informacion-adicional{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: stretch;
+    margin-top: 20px;
+}
+
+.columna {
+  flex: 1;            
+  padding: 0 20px;             
+}
+
+.columna:first-child {
+  border-right: 1.5px solid #f3c2c9; /* Color rosado de la línea */
 }
 
 .tarjeta:hover img {
