@@ -22,3 +22,24 @@ h1 {
 header img {
     width: 400px;
 }
+
+@media(max-width:600px){
+    header {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 20px;
+        gap: 30px; 
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 50px; 
+        text-align: center;
+    }
+
+    header img {
+        width: 100%;
+        max-width: 300px;
+    }
+}

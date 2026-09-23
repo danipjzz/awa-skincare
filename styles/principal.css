@@ -3,77 +3,55 @@
     font-family: "Quicksand", sans-serif;
 }
 
-header {
-    display: flex;
-    align-items: center;
-}
-header img {
-    width: 160px;
-}
-
-nav {
-    display: flex;
-    gap: 20px;
-    margin-left: 300px;
-    
-}
-nav a{
-    font-size: 30px;
-    color: #7E4A4A;
-    text-decoration: none;
-}
-nav a:hover{
-    color: #f4a6b4;
-}
-
 .banner {
     display: flex;
     flex-direction: row;
-    gap:10px;
+    gap: 0.625rem;
     align-items: center;
     justify-content: flex-start;
     background-color: #fff6fa;
 }
-.banner > div:first-child {
-    margin-left: 50px; 
-    padding-right: 20px; 
+.TituloBanner {
+    margin-left: 3.125rem; 
+    padding-right: 1.25rem; 
     display: flex;
     flex-direction: column;
 }
 .banner h1{
     font-family: "Cormorant Garamond", serif;
     font-weight:500;
-    font-size: 80px;
+    font-size: 5rem;
     color: #7E4A4A;
-    margin-bottom: 5px
+    margin-bottom: 0.3125rem;
 }
 .banner a{
-    font-size: 20px;
+    font-size: 1.25rem;
     color: white;
+    margin-bottom: 2%;
 }
 
 .banner p{
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #7E4A4A;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .palabra-destacada{
     color:#f4a6b4;
     font-weight:500;
-    font-size: 80px;
+    font-size: 5rem;
     font-family: "Cormorant Garamond", serif;
 }
 .boton{
     background-color: #ffbeca;
-    border-radius: 30px;
-    padding: 20px;
+    border-radius: 1.875rem;
+    padding: 1.25rem;
     text-decoration: none;
     color: white;
     align-self: center;
 }
 .banner-img {
-    width: 450px;     
+    width: 28.125rem;   
     height: auto;      
     object-fit: contain;
 }
@@ -83,22 +61,22 @@ nav a:hover{
 .categorias{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 30px;
-    padding: 20px;
-    font-size: 20px;
-    
+    gap: 1.875rem;
+    padding: 1.25rem;
+    font-size: 1.25rem;
 }
+
 .categoria{
     background-color: #ffbeca;
-    border-radius: 30px;
-    padding: 20px;
+    border-radius: 1.875rem;
+    padding: 1.25rem;
     text-decoration: none;
     color: white;
     text-align: center;
 }
 .categoria img {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     object-fit: contain;
 }
 
@@ -114,27 +92,28 @@ nav a:hover{
 .productos{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 30px;
-    padding: 20px;
+    gap: 1.875rem;
+    padding: 1.25rem;
 }
 .productos h2 {
     grid-column: 1 / 4;
     text-align: center;
     color: #7E4A4A;
+    font-size: 2rem;
 }
 
 .tarjeta {
     position: relative;
     perspective: 1000px;
-    height: 500px; 
+    height: 31.25rem; 
 }
 
 .productos img {
     width: 100%;
-    height: 500px;
+    height: 31.25rem;
     object-fit: contain;
     border: 1px solid #f8cccc;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     text-align: center;
     position: absolute;
     top: 0;
@@ -151,12 +130,12 @@ nav a:hover{
     top: 0;
     left: 0;
     width: 100%;
-    height: 500px;
+    height: 31.25rem;
     border: 1px solid #f8cccc;
-    border-radius: 20px;
-    background: #fff6fa; /* tono acorde a tu paleta */
+    border-radius: 1.25rem;
+    background: #fff6fa;
     color: #7E4A4A;
-    padding: 20px;
+    padding: 1.25rem;
     overflow: hidden;
     backface-visibility: hidden;
     transition: transform 0.6s;
@@ -168,8 +147,8 @@ nav a:hover{
 .separator-horizontal {
   position: relative;
   text-align: center;
-  border-bottom: 1px solid #f3c2c9; /* Color rosado suave de la línea */
-  margin: 20px 0;
+  border-bottom: 1px solid #f3c2c9; 
+  margin: 1.25rem 0;
 }
 
 .heart-icon {
@@ -178,25 +157,25 @@ nav a:hover{
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff6fa; 
-  padding: 0 8px;
+  padding: 0 0.5rem;
   color: #e87a8f; 
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .informacion-adicional{
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: stretch;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .columna {
   flex: 1;            
-  padding: 0 20px;             
+  padding: 0 1.25rem;             
 }
 
 .columna:first-child {
-  border-right: 1.5px solid #f3c2c9; /* Color rosado de la línea */
+  border-right: 1.5px solid #f3c2c9; 
 }
 
 .tarjeta:hover img {
@@ -207,25 +186,93 @@ nav a:hover{
     transform: rotateY(360deg);
 }
 
-footer{
-    background-color: #f4a6b4;
-    color:white;
+
+
+@media (max-width: 600px){
+    .banner {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-areas: 
+        "titulo titulo"
+        "info imagen"
+        "boton   imagen";
+        align-items: center;
+        gap: 0.9375rem;
+        padding: 1.5625rem 0.9375rem;
+    }
+
+    .TituloBanner {
+        display: contents;
+    }
+
+     .banner h1{
+        grid-area: titulo;
+        width: 100%;
+        text-align: left;
+        font-size: 3rem;
+        margin-bottom: 0.3125rem;
+    }
+
+    .banner .palabra-destacada {
+        font-size: 3rem; 
+    }
+   
+
+    .banner p{
+        grid-area: info;
+        font-size: 1.25rem;
+        margin-bottom: 1.25rem;
+        align-self: start;
+    }
+    .boton{
+        grid-area: boton;
+        align-self: start;
+        justify-self: start;
+        padding: 0.625rem 1.25rem;
+        font-size: 0.9rem;
+    }
+
+    .banner > div:has(.banner-img) {
+        grid-area: imagen;
+        align-self: right;
+    }
+    .banner-img {
+        width: 10rem;
+        margin: 0 auto;
+        object-fit: contain;
+    }
+
+
+    .categorias{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
-    padding: 0px;
-    text-align: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    font-size: 1rem;
 }
-footer a {
-    grid-column: 1 / 4;
-    text-decoration-color: white;
+    .categoria {
+    min-width: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-footer h4{
-    margin:0;
-    text-align: center;
-    color: white;
-    background-color: #f8cccc;
+
+    .categoria img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
 }
-footer h4:active{
-    color: #7E4A4A;
+    .productos{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.875rem;
+    padding: 1.25rem;
+    
+}
+
+    .productos h2 {
+        grid-column: 1;
+    }
 }

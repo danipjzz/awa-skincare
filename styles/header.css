@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+header img {
+    width: 10rem;
+}
+
+nav {
+    display: flex;
+    gap: 1.25rem;
+    margin-left: 12rem;  
+    justify-content: space-between;
+    flex: 1; 
+}
+.iconos-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+.usuario{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-right: 3rem;
+    color:#f494ad;
+    font-size: 1.5rem; 
+}
+nav a{
+    font-size: 1.875rem;
+    color: #7E4A4A;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #f4a6b4;
+}
+
+.menu{
+    display:none;
+}
+
+.barras {
+    display: none;
+    cursor: pointer;
+    margin-left: auto;
+    font-size: 1.5rem;
+    color: #7E4A4A;
+    z-index: 20;
+}
+
+.iconos-menu i{
+    display: none;
+}
+
+@media (max-width: 600px){
+
+    .barras{
+        display: block;
+
+    }
+    
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        margin-left: 0;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 75%;
+        max-width: 20rem;
+        height: 100vh;
+        background-color: #fff6fa;
+        padding: 5rem 1.5rem 1.5rem;
+        box-shadow: -0.25rem 0 1rem rgba(126, 74, 74, 0.15);
+
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 15;
+    }
+
+    nav a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.375rem;
+        color: #7E4A4A;
+        padding: 1rem 0;
+        border-bottom: 1px solid #f3c2c9;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+    .iconos-menu{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .iconos-menu i{
+        display: inline-block;
+        width: 1.5rem;
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    .menu:checked ~ nav {
+        transform: translateX(0);
+    }
+    .usuario{
+        margin-left: 15%;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+}

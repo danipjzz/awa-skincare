@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href ="./styles/principal.css">
+    <link rel="stylesheet" href ="./styles/header.css">
+    <link rel="stylesheet" href ="./styles/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>AWA</title>
 </head>
 <body>
-    <header id="inicio">
-        <img src="./images/awa.png" alt="logo">
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="/Content/contruccion.html">Tienda</a>
-            <a href="/Content/contruccion.html">Testimonios</a>
-            <a href="/Content/contruccion.html">Cuenta</a>
-        </nav>
-    </header>
+    <awa-header></awa-header>
+    <script src="./scripts/header.js"></script>
     <section class="banner">
-        <div>
+        
+        <div class="TituloBanner"> 
             <h1><span class="palabra-destacada">S</span>kincare coreano <br> para <span class="palabra-destacada">consentir</span> tu piel</h1>
             <p>Productos autenticos, seleccionados con amor</p>
             <a href="./Content/contruccion.html" class="boton">Comprar skincare</a>
@@ -57,10 +54,10 @@
     </section>
 
     <section class="productos">
-        <h2>Productos destacados</h2>
+        <h2>♥Productos destacados♥</h2>
 
         <div class="tarjeta">
-            <img src="./images/anua.webp">
+            <img src="./images/anua.avif">
             <div class="info">
                 <h3>ANUA - <br> Niacinamide 10% + Txa 4% Serum X 30Ml</h3>
                 <div class="separator-horizontal">
@@ -232,34 +229,7 @@
             </div>
         </div>
     </section>
-
-    <footer>
-        <a href=#inicio><h4>Inicio de página</h4></a>
-        <div>
-         <h2>Contacto</h2>
-         <p>
-            hola@awa-skincare.com <br>
-            +57 300 456 7821 <br>
-            Bogotá, Colombia
-         </p>
-        </div>
-
-        <div>
-         <h2>About Us</h2>
-         <p>
-            Quiénes somos <br>
-            Nuestra misión <br>
-            Nuestra visión
-         </p>
-        </div>
-
-        <div>
-         <h2>Ayuda</h2>
-         <p>
-            Preguntas frecuentes <br>
-            Pedidos <br>
-            Cambios y devoluciones
-         </p>
-        </div>
+    <awa-footer></awa-footer>
+    <script src="./scripts/footer.js"></script>
 </body>
 </html>
