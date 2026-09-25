@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    font-family:  "Quicksand", sans-serif;
+}
+body{
+    background-color: white;
+}
+.titulo{
+    text-align: center;
+    align-items: center;
+}
+
+.mensaje{
+    background-color: #fff6fa;
+    color: #7E4A4A;
+    border-radius: 15px;
+    font-size: large;
+    padding: 0.5rem 1rem;
+}
+
+.titulo h1{
+    font-family: "Cormorant Garamond", serif;
+    color: #7E4A4A;
+    font-weight:500;
+    font-size: 4rem;
+}
+.grid-testimonios{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    
+}
+
+.testimonio{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: left;
+    background:  #fff6fa;
+    border: 1px solid #f8cccc;
+    border-radius: 5%;
+    padding: 1.5rem;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.estrella{
+    color: #f5a4a4;
+    margin-bottom: 1rem;
+}
+.fa-heart{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: #f5a4a4;
+
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    filter: invert(1) grayscale(100);
+}
+
+awa-footer{
+    margin-top: 200px;
+}
+
+@media(max-width:600px){
+    .grid-testimonios{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    
+}
+    .testimonio{
+        max-width: 80%; /* para que no quede angosta en celular */
+    }
+}

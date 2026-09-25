@@ -19,7 +19,7 @@ class AwaHeader extends HTMLElement {
                     <i class="fa-solid fa-bag-shopping"></i>
                     Tienda
                 </a>
-                <a href="/Content/contruccion.html">
+                <a href="/Content/testimonios.html">
                     <i class="fa-regular fa-comment-dots"></i>
                     Testimonios
                 </a>
